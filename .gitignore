@@ -58,6 +58,8 @@ _deps
 build/
 cmake-build-*/
 bin
+.vscode
+.vs
 .classpath
 # Other
 .DS_Store
