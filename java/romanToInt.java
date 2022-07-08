@@ -1,5 +1,5 @@
 import java.util.*;  
-class Solution {
+class RomanToInt {
     public int romanToInt(String s) {
         Dictionary romans = new Hashtable();  
         romans.put('I', 1);
