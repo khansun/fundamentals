@@ -1,9 +1,9 @@
 
 class TestSolution {
 	public static void main(String[] args) {
-		PalindromeNumber palNumb = new PalindromeNumber();
-		int target = -121;
-		System.out.println(palNumb.isPalindrome(target));
+		RandCirclePi randCircle = new RandCirclePi();
+		int points = 100000000;
+		System.out.println(randCircle.piValue(points));
 	}
 
 } 
