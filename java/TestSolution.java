@@ -16,7 +16,7 @@ class TestSolution {
 		graph.connectNodes(7, 5);
 		graph.connectNodes(7, 8);
 		System.out.print("Breadth First Traversal for the starting from node [2] graph is: ");
-		graph.searchNode(2);
+		graph.traverse(2);
 	}
 
 } 

@@ -1,22 +1,20 @@
 import java.util.LinkedList;
 public class BFS {
-    private int edges;
+    private int vertices;
     private LinkedList<Integer>[] adjList;
     private LinkedList<Integer> queue;
-    BFS(int edges){
-        this.edges=edges;
-        adjList = new LinkedList[edges];
-        for (int i=0; i< edges; i++){
-            adjList[i] = new LinkedList<Integer>();
-        }
+    BFS(int vertices){
+        this.vertices = vertices;
+        adjList = new LinkedList[vertices];
+        for (int i = 0; i< vertices; i++) adjList[i] = new LinkedList<Integer>();
         queue = new LinkedList<Integer>();
     }
     void connectNodes(int initialNode, int targetNode){
         adjList[initialNode].add(targetNode);
     }
-    public void searchNode(int start) {
+    public void traverse(int start) {
         /* boolean array declaration for nodes visited*/
-        boolean nodes[] = new boolean[edges];
+        boolean nodes[] = new boolean[vertices];
         int current = 0;
         nodes[start]=true;
         /* starting node as the first element for the queue */
@@ -51,6 +49,6 @@ public class BFS {
         graph.connectNodes(3, 3);
         graph.connectNodes(4, 4);
         System.out.print("Breadth First Traversal from the node [0] for this graph is: ");
-        graph.searchNode(0);
+        graph.traverse(0);
     }
 }
