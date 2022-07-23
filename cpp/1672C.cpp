@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int  tests;
-    cin >> tests;
+    //int  tests;
+    //cin >> tests;
     int n;
-    for (int j = 0; j < tests; j++)
+    for (int j = 0; j < 1; j++)
     {
         cin.clear();
         cin >> n;
