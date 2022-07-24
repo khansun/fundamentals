@@ -13,7 +13,7 @@ void moveWheel(int i, char move, int lock[]){
     {
         lock[i] = lock[i]-1;
     }
-        else if (move=='D')
+    else if (move=='D')
     {
         lock[i] = lock[i]+1;
     }

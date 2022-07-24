@@ -1,6 +1,8 @@
 #include<iostream>
 #include<vector>
+
 using namespace std;
+
  int main() {
 	 vector<int> arrow;
 	 arrow.push_back(2);

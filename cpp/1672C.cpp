@@ -6,7 +6,9 @@ int main(){
     int n;
     for (int j = 0; j < 1; j++)
     {
-        cin.clear();
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        cout.tie(NULL);
         cin >> n;
         int eq=0;
         int arr [n+1];
